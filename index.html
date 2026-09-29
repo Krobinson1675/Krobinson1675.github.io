@@ -1,42 +1,406 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="1404.47">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 14.0px; font: 12.0px Helvetica; color: #000000; -webkit-text-stroke: #000000}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 14.0px; font: 12.0px Times; color: #000000; -webkit-text-stroke: #000000}
-    span.s1 {font-kerning: none}
-    td.td1 {width: 57.0px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kali Robinson — IT Strategic Consultant & Systems Analyst</title>
+  <meta name="description" content="Kali Robinson — IT consultant, systems analyst and infrastructure technician. Active Directory, Entra ID, Microsoft 365, Windows Server, endpoint management, networking and security. Boston, MA.">
+  <meta property="og:title" content="Kali Robinson — IT Strategic Consultant & Systems Analyst">
+  <meta property="og:description" content="Identity, infrastructure, endpoints and security — from the rack to the boardroom.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#05080f">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2305080f'/%3E%3Ctext x='50%25' y='56%25' text-anchor='middle' dominant-baseline='middle' font-family='monospace' font-size='30' font-weight='700' fill='%23c9d6ea'%3EKR%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-<p class="p1"><span class="s1">&lt;DOCTYPE html&gt;</span></p>
-<p class="p1"><span class="s1">&lt;html&gt;</span></p>
-<table cellspacing="0" cellpadding="0">
-  <tbody>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p2"><span class="s1">&lt;head&gt;<span class="Apple-converted-space">           </span></span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"><br>
-</span></p>
-      </td>
-    </tr>
-  </tbody>
-</table>
-<p class="p1"><span class="s1">&lt;body&gt;</span></p>
-<p class="p1"><span class="s1">&lt;h1&gt;Kali Robinson&lt;/h1&gt;</span></p>
-<p class="p1"><span class="s1">&lt;p&gt;My User Site&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1">&lt;/body&gt;</span></p>
-<p class="p1"><span class="s1">&lt;/html&gt;</span></p>
-<p class="p2"><span class="s1"><br>
-</span></p>
+  <!-- Animated network background -->
+  <canvas id="bg" aria-hidden="true"></canvas>
+  <div class="bg-glow" aria-hidden="true"></div>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav glass" id="top">
+    <a class="brand" href="#top" aria-label="Kali Robinson — home">
+      <span class="brand-mark">KR</span>
+      <span class="brand-name">Kali Robinson</span>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#about">About</a>
+      <a href="#expertise">Expertise</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#credentials">Credentials</a>
+      <a href="#contact" class="nav-cta">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <section class="hero" aria-labelledby="hero-name">
+      <div class="hero-inner">
+        <p class="eyebrow mono"><span class="pulse"></span> Available for new engagements · Boston, MA</p>
+        <h1 id="hero-name">Kali Robinson</h1>
+        <p class="hero-role mono">
+          <span class="prompt">&gt;</span> <span id="typed">IT Strategic Consultant</span><span class="caret" aria-hidden="true"></span>
+        </p>
+        <p class="hero-lede">
+          Six-plus years across help desk, desktop support and network operations — administering
+          identity, endpoints, servers and security for hospitals, colleges and managed-services
+          clients, and translating it all into decisions people can actually make.
+        </p>
+        <div class="hero-actions">
+          <a href="#experience" class="btn btn-primary">View experience</a>
+          <a href="#contact" class="btn btn-ghost">Get in touch</a>
+        </div>
+        <dl class="hero-stats">
+          <div class="stat glass"><dt class="mono">Years in IT</dt><dd><span data-count="6">0</span>+</dd></div>
+          <div class="stat glass"><dt class="mono">Certifications</dt><dd><span data-count="4">0</span><small> +1</small></dd></div>
+          <div class="stat glass"><dt class="mono">Platforms</dt><dd class="stat-text">Win · macOS · iOS · Android</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section id="about" class="section reveal">
+      <div class="section-head">
+        <span class="section-index mono">01</span>
+        <h2>About</h2>
+      </div>
+      <div class="about-grid">
+        <div class="glass card about-copy">
+          <p>
+            I'm an IT consultant and systems analyst who works across the full surface of an
+            organization's technology — from imaging a laptop on a hospital floor to repairing
+            DFS replication across a mixed-version Active Directory forest.
+          </p>
+          <p>
+            Most recently I was a Tier II NOC Analyst at a managed-services provider: the escalation
+            point for desktop, network, telecom and access issues across multiple client organizations,
+            administering Active Directory, Entra ID and Microsoft 365, hardening email with
+            DMARC/DKIM/SPF, and responding to security incidents with Defender and EDR tooling.
+          </p>
+          <p>
+            I own tickets end to end, escalate cleanly, and document so the next person doesn't
+            have to rediscover what I already learned. An English degree from Amherst College means
+            I can explain technical risk in plain language — which is most of consulting.
+          </p>
+        </div>
+        <aside class="glass card about-focus">
+          <h3 class="mono">// current focus</h3>
+          <ul class="focus-list">
+            <li><span class="dot"></span>Microsoft AZ-800 — Windows Server Hybrid Administrator</li>
+            <li><span class="dot"></span>Hybrid identity: AD DS ⇄ Entra ID</li>
+            <li><span class="dot"></span>Automation with PowerShell, RMM &amp; agentic AI</li>
+            <li><span class="dot"></span>Security baselines &amp; email authentication</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ============ EXPERTISE ============ -->
+    <section id="expertise" class="section reveal">
+      <div class="section-head">
+        <span class="section-index mono">02</span>
+        <h2>Expertise</h2>
+      </div>
+      <p class="section-sub">Select a skill to light up where it shows up in my experience and projects.</p>
+      <div class="skill-groups">
+        <div class="glass card skill-group">
+          <h3>Identity &amp; Access</h3>
+          <div class="chips">
+            <button class="chip" data-skill="ad">Active Directory</button>
+            <button class="chip" data-skill="entra">Entra ID</button>
+            <button class="chip" data-skill="m365">Microsoft 365</button>
+            <button class="chip" data-skill="gpo">Group Policy</button>
+            <button class="chip" data-skill="mfa">MFA</button>
+            <button class="chip" data-skill="provisioning">Provisioning / Access Reviews</button>
+          </div>
+        </div>
+        <div class="glass card skill-group">
+          <h3>Servers &amp; Virtualization</h3>
+          <div class="chips">
+            <button class="chip" data-skill="windows-server">Windows Server 2016–2022</button>
+            <button class="chip" data-skill="dfs">DFS / DFSR</button>
+            <button class="chip" data-skill="vmware">VMware / vSAN</button>
+            <button class="chip" data-skill="vdi">Horizon VDI</button>
+            <button class="chip" data-skill="patching">Patch Management</button>
+          </div>
+        </div>
+        <div class="glass card skill-group">
+          <h3>Endpoints</h3>
+          <div class="chips">
+            <button class="chip" data-skill="intune">Intune / Endpoint Manager</button>
+            <button class="chip" data-skill="jamf">Jamf</button>
+            <button class="chip" data-skill="sccm">SCCM Imaging</button>
+            <button class="chip" data-skill="bitlocker">BitLocker</button>
+            <button class="chip" data-skill="hardware">Hardware Repair</button>
+          </div>
+        </div>
+        <div class="glass card skill-group">
+          <h3>Security &amp; Continuity</h3>
+          <div class="chips">
+            <button class="chip" data-skill="edr">Defender / EDR / SIEM</button>
+            <button class="chip" data-skill="ir">Incident Response</button>
+            <button class="chip" data-skill="email">DMARC · DKIM · SPF</button>
+            <button class="chip" data-skill="vuln">Vulnerability Remediation</button>
+            <button class="chip" data-skill="bcdr">BC / DR</button>
+          </div>
+        </div>
+        <div class="glass card skill-group">
+          <h3>Networking &amp; Telecom</h3>
+          <div class="chips">
+            <button class="chip" data-skill="network">TCP/IP · DNS · DHCP · VLAN</button>
+            <button class="chip" data-skill="routing">BGP · OSPF · Cisco IOS</button>
+            <button class="chip" data-skill="wan">LAN/WAN &amp; Carriers</button>
+            <button class="chip" data-skill="voip">Cisco IP Phones / Jabber</button>
+          </div>
+        </div>
+        <div class="glass card skill-group">
+          <h3>Automation &amp; Service</h3>
+          <div class="chips">
+            <button class="chip" data-skill="powershell">PowerShell / Python</button>
+            <button class="chip" data-skill="rmm">Kaseya VSA / RMM</button>
+            <button class="chip" data-skill="psa">Autotask · ServiceNow · IT Glue</button>
+            <button class="chip" data-skill="docs">Documentation &amp; SOPs</button>
+            <button class="chip" data-skill="vendor">Vendor Coordination</button>
+          </div>
+        </div>
+      </div>
+      <button class="clear-filter mono" hidden>× clear highlight</button>
+    </section>
+
+    <!-- ============ EXPERIENCE ============ -->
+    <section id="experience" class="section reveal">
+      <div class="section-head">
+        <span class="section-index mono">03</span>
+        <h2>Experience</h2>
+      </div>
+
+      <ol class="timeline">
+        <li class="role glass card" data-skills="ad entra m365 provisioning intune jamf edr ir email windows-server vmware powershell rmm vendor psa network bcdr mfa">
+          <div class="role-head">
+            <div>
+              <h3>Tier II NOC Analyst</h3>
+              <p class="org">Effortless Office <span class="muted">· Brockton, MA</span></p>
+            </div>
+            <span class="when mono">Feb 2025 — Aug 2026</span>
+          </div>
+          <ul class="role-points">
+            <li>Tier II escalation point for desktop, network, telecom and access issues across multiple client organizations, resolving tickets in Autotask within contractual response times.</li>
+            <li>Administered users, mailboxes, security groups and permissions in Active Directory, Entra ID and Microsoft 365 — onboarding, offboarding and access reviews.</li>
+            <li>Managed endpoint configuration and compliance through Intune, Endpoint Manager and Jamf for Windows, macOS and mobile.</li>
+            <li>Investigated and remediated security incidents with Defender, RocketCyber and EDR tooling; configured DMARC, DKIM and SPF to harden email delivery.</li>
+            <li>Supported upgrades, migrations and maintenance across Windows Server 2016/2019/2022 and VMware/vSAN infrastructure.</li>
+            <li>Automated recurring account and mailbox administration with PowerShell, RMM and agentic AI, cutting manual handling on routine provisioning.</li>
+            <li>Coordinated vendors, carriers and providers on escalated hardware, connectivity and licensing issues; covered after-hours infrastructure events.</li>
+          </ul>
+          <div class="tags"><span>Entra ID</span><span>M365</span><span>Intune</span><span>Defender</span><span>VMware</span><span>PowerShell</span></div>
+        </li>
+
+        <li class="role glass card" data-skills="ad m365 provisioning rmm psa docs hardware">
+          <div class="role-head">
+            <div>
+              <h3>Service Desk Analyst</h3>
+              <p class="org">Effortless Office <span class="muted">· Brockton, MA</span></p>
+            </div>
+            <span class="when mono">Feb 2024 — Feb 2025</span>
+          </div>
+          <ul class="role-points">
+            <li>First point of contact for a high-volume queue — hardware, software, printers, mobile devices and account access.</li>
+            <li>Resolved Windows 7/10/11 desktop, application and connectivity issues remotely through Bomgar and Kaseya VSA.</li>
+            <li>Managed accounts, email access and permissions across Active Directory and Microsoft 365 (Exchange, SharePoint, OneDrive, Teams).</li>
+            <li>Documented environments and resolutions in IT Glue and Autotask, improving handoffs and reducing repeat escalations.</li>
+          </ul>
+          <div class="tags"><span>Service Desk</span><span>Bomgar</span><span>IT Glue</span><span>MSP</span></div>
+        </li>
+
+        <li class="role glass card" data-skills="sccm bitlocker hardware psa">
+          <div class="role-head">
+            <div>
+              <h3>Information Support Specialist / Windows Deployment Technician</h3>
+              <p class="org">Massachusetts General Hospital <span class="muted">· Boston, MA</span></p>
+            </div>
+            <span class="when mono">Feb 2022 — Apr 2022</span>
+          </div>
+          <ul class="role-points">
+            <li>Deployed and configured HP and Dell Windows endpoints on-site across hospital departments with SCCM and USB boot media, including BIOS configuration and BitLocker.</li>
+            <li>Hands-on hardware support — drives, RAM, power supplies, printers, display mounts — across clinical and administrative areas.</li>
+            <li>Supported Epic, Citrix Workspace and ServiceNow in a 24/7 environment where downtime directly affected patient care.</li>
+            <li>Managed device inventory, asset tracking and secure disposal under strict patient-information security protocols.</li>
+          </ul>
+          <div class="tags"><span>SCCM</span><span>BitLocker</span><span>Epic</span><span>Citrix</span><span>Healthcare</span></div>
+        </li>
+
+        <li class="role glass card" data-skills="network wan vendor">
+          <div class="role-head">
+            <div>
+              <h3>Data Repair Analyst</h3>
+              <p class="org">Granite Telecommunications <span class="muted">· Quincy, MA</span></p>
+            </div>
+            <span class="when mono">Sep 2020 — Nov 2020</span>
+          </div>
+          <ul class="role-points">
+            <li>Resolved LAN/WAN connectivity for business customers, including modem, router and Cradlepoint provisioning.</li>
+            <li>Coordinated carriers and field techs (Comcast, Verizon, AT&amp;T, Spectrum, ILEC/CLEC) through to resolution.</li>
+            <li>Analyzed line quality — SNR, attenuation, bit rate, loop length — and configured DHCP, NAT, IP passthrough and SIP ALG.</li>
+          </ul>
+          <div class="tags"><span>LAN/WAN</span><span>Cradlepoint</span><span>Layer 1</span></div>
+        </li>
+
+        <li class="role glass card" data-skills="ad voip patching">
+          <div class="role-head">
+            <div>
+              <h3>IT Operations Support Specialist</h3>
+              <p class="org">Cambridge College <span class="muted">· Boston, MA</span></p>
+            </div>
+            <span class="when mono">Mar 2020</span>
+          </div>
+          <ul class="role-points">
+            <li>Supported faculty and staff with Active Directory administration, printer configuration and Windows patching.</li>
+            <li>Administered Cisco IP phone services and Jabber softphone support for campus telecom.</li>
+          </ul>
+          <div class="tags"><span>AD</span><span>Cisco VoIP</span><span>Higher Ed</span></div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section id="projects" class="section reveal">
+      <div class="section-head">
+        <span class="section-index mono">04</span>
+        <h2>Project Highlights</h2>
+      </div>
+      <div class="project-tabs mono" role="tablist" aria-label="Project categories">
+        <button role="tab" class="tab is-active" data-filter="all" aria-selected="true">All</button>
+        <button role="tab" class="tab" data-filter="infra" aria-selected="false">Infrastructure</button>
+        <button role="tab" class="tab" data-filter="auto" aria-selected="false">Automation</button>
+        <button role="tab" class="tab" data-filter="sec" aria-selected="false">Security</button>
+      </div>
+
+      <div class="project-grid">
+        <article class="project glass card" data-cat="infra" data-skills="dfs ad windows-server">
+          <span class="project-cat mono">infrastructure</span>
+          <h3>DFS Replication Repair</h3>
+          <p>Diagnosed and resolved DFSR failures in a mixed Server 2012/2022 AD forest, including a Server 2022 domain controller — restoring replication consistency and removing a recurring point of failure.</p>
+        </article>
+        <article class="project glass card" data-cat="infra" data-skills="dfs ad windows-server">
+          <span class="project-cat mono">infrastructure</span>
+          <h3>DFS Namespace Deployment</h3>
+          <p>Installed and configured DFS namespaces in a Server 2012 forest-functional-level environment for centralized, fault-tolerant file share access.</p>
+        </article>
+        <article class="project glass card" data-cat="infra" data-skills="vdi vmware patching">
+          <span class="project-cat mono">infrastructure</span>
+          <h3>Horizon VDI Golden Image</h3>
+          <p>Maintained the parent VM image for a VMware Horizon environment — app updates, IP changes, Windows updates — and published it to the desktop pool to keep every user on a current, standardized build.</p>
+        </article>
+        <article class="project glass card" data-cat="infra" data-skills="gpo ad">
+          <span class="project-cat mono">infrastructure</span>
+          <h3>Group Policy Baselines</h3>
+          <p>Configured and maintained GPOs across client AD DS environments to enforce security baselines and standardize desktop and user configuration.</p>
+        </article>
+        <article class="project glass card" data-cat="infra" data-skills="patching windows-server">
+          <span class="project-cat mono">infrastructure</span>
+          <h3>Server Patch Management</h3>
+          <p>Ran routine Windows Server patching across client environments, validating dependent services and applications after every cycle.</p>
+        </article>
+        <article class="project glass card" data-cat="auto" data-skills="rmm patching powershell">
+          <span class="project-cat mono">automation</span>
+          <h3>Windows 11 Fleet Upgrades</h3>
+          <p>Built Kaseya VSA workflows to roll out Windows 11 23H2/24H2 feature updates fleet-wide — standardized OS versions with no per-device hands-on work.</p>
+        </article>
+        <article class="project glass card" data-cat="auto" data-skills="rmm vdi vuln powershell">
+          <span class="project-cat mono">automation</span>
+          <h3>Remote Client Deployment</h3>
+          <p>Scripted VMware Horizon Client upgrades through Kaseya VSA, closing exposure windows without on-site visits.</p>
+        </article>
+        <article class="project glass card" data-cat="auto" data-skills="powershell provisioning m365 entra">
+          <span class="project-cat mono">automation</span>
+          <h3>Provisioning Automation</h3>
+          <p>Automated recurring account and mailbox administration with PowerShell, RMM and agentic AI, reducing manual handling time on routine provisioning requests.</p>
+        </article>
+        <article class="project glass card" data-cat="sec" data-skills="mfa entra">
+          <span class="project-cat mono">security</span>
+          <h3>MFA Adoption Initiative</h3>
+          <p>Made the case for, and drove, multi-factor authentication adoption across client environments — working directly with clients to raise their security posture.</p>
+        </article>
+        <article class="project glass card" data-cat="sec" data-skills="vuln vdi">
+          <span class="project-cat mono">security</span>
+          <h3>CVSS Vulnerability Remediation</h3>
+          <p>Remediated scan-flagged vulnerabilities on VMware Horizon Client installs across the client base, reducing overall risk exposure.</p>
+        </article>
+        <article class="project glass card" data-cat="sec" data-skills="email">
+          <span class="project-cat mono">security</span>
+          <h3>Email Authentication Hardening</h3>
+          <p>Audited client SPF records, pruned stale and unauthorized senders, and configured DMARC and DKIM — tightening email delivery against spoofing and phishing.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ CREDENTIALS ============ -->
+    <section id="credentials" class="section reveal">
+      <div class="section-head">
+        <span class="section-index mono">05</span>
+        <h2>Credentials</h2>
+      </div>
+      <div class="cred-grid">
+        <div class="cred glass card cred-progress">
+          <span class="cred-issuer mono">Microsoft</span>
+          <h3>AZ-800</h3>
+          <p class="muted">Windows Server Hybrid Administrator Associate</p>
+          <div class="progress" aria-label="In progress"><span></span></div>
+          <span class="mono in-progress">in progress</span>
+        </div>
+        <div class="cred glass card"><span class="cred-issuer mono">CompTIA</span><h3>Security+</h3><p class="muted">Dec 2023</p></div>
+        <div class="cred glass card"><span class="cred-issuer mono">CompTIA</span><h3>CIOS</h3><p class="muted">IT Operations Specialist · Feb 2020</p></div>
+        <div class="cred glass card"><span class="cred-issuer mono">CompTIA</span><h3>Network+</h3><p class="muted">Feb 2020</p></div>
+        <div class="cred glass card"><span class="cred-issuer mono">CompTIA</span><h3>A+</h3><p class="muted">Dec 2019</p></div>
+      </div>
+
+      <h3 class="subhead mono">// education &amp; training</h3>
+      <div class="edu-list">
+        <div class="edu glass card">
+          <div><h3>Windows Server 2019 System Administrator Training</h3><p class="org">Per Scholas</p></div>
+          <span class="when mono">Aug — Sep 2025</span>
+        </div>
+        <div class="edu glass card">
+          <div><h3>CompTIA Security+ Certification Program</h3><p class="org">Per Scholas</p></div>
+          <span class="when mono">Sep — Dec 2023</span>
+        </div>
+        <div class="edu glass card">
+          <div><h3>CompTIA A+ / Network+ Certification Program</h3><p class="org">Per Scholas · Cambridge, MA</p></div>
+          <span class="when mono">2019 — 2020</span>
+        </div>
+        <div class="edu glass card">
+          <div><h3>B.A., English</h3><p class="org">Amherst College · Amherst, MA</p></div>
+          <span class="when mono">2017</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section id="contact" class="section reveal">
+      <div class="contact glass card">
+        <span class="section-index mono">06</span>
+        <h2>Let's talk infrastructure.</h2>
+        <p>Open to consulting engagements and systems, infrastructure and analyst roles — Boston area and remote.</p>
+        <div class="contact-actions">
+          <a class="btn btn-primary" href="mailto:krobinson1675@gmail.com">krobinson1675@gmail.com</a>
+          <a class="btn btn-ghost" href="https://www.linkedin.com/in/kali-robinson-794513138/" target="_blank" rel="noopener">LinkedIn ↗</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer mono">
+    <span>© <span id="year">2026</span> Kali Robinson</span>
+    <a href="#top">back to top ↑</a>
+  </footer>
+
+  <script src="js/main.js"></script>
 </body>
 </html>
